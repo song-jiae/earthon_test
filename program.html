@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/gmarketsans/GmarketSans.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/program.css">
+  <title>프로그램 — EARTHON</title>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+  <a href="index.html" class="nav-logo">EARTH<span>ON</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html"   class="nav-link">홈</a></li>
+    <li><a href="about.html"   class="nav-link">소개</a></li>
+    <li><a href="program.html" class="nav-link active">프로그램</a></li>
+    <li><a href="contact.html" class="nav-link nav-cta">참여신청</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="메뉴">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <p class="page-hero-tag"><i class="fa-solid fa-calendar-days"></i> Programs</p>
+    <h1>30일을 채우는<br>다양한 미션들</h1>
+    <p class="page-hero-desc">제로웨이스트, 에너지 절감, 식습관 개선까지. 카테고리별로 원하는 미션을 골라 실천하세요.</p>
+  </div>
+</section>
+
+<!-- TAB FILTER + CARDS -->
+<section class="tab-section">
+  <div class="container">
+    <div class="tab-header" data-aos="fade-up">
+      <p class="eyebrow" style="justify-content:center">Mission Categories</p>
+      <h2 class="section-title">카테고리별 미션</h2>
+    </div>
+    <div class="tab-bar" data-aos="fade-up">
+      <button class="tab-btn active" data-filter="all">전체</button>
+      <button class="tab-btn" data-filter="waste">제로웨이스트</button>
+      <button class="tab-btn" data-filter="energy">에너지 절감</button>
+      <button class="tab-btn" data-filter="food">식습관</button>
+      <button class="tab-btn" data-filter="transport">교통</button>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="prog-card" data-category="waste" data-aos="fade-up" data-aos-delay="0">
+        <div class="prog-card-img"><img src="https://picsum.photos/seed/waste01/600/400" alt="에코백 챌린지"></div>
+        <div class="prog-card-body">
+          <div class="prog-card-top">
+            <span class="badge badge-green">제로웨이스트</span>
+            <span class="badge badge-gold">초급</span>
+          </div>
+          <div class="prog-card-title">에코백 30일 챌린지</div>
+          <p class="prog-card-desc">비닐봉지 대신 에코백을 사용하는 미션입니다. 매일 장을 볼 때마다 사진을 찍어 인증하세요.</p>
+          <div class="prog-card-meta">
+            <span><i class="fa-regular fa-clock"></i> 30일</span>
+            <span><i class="fa-solid fa-users"></i> 8,420명 참여</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="energy" data-aos="fade-up" data-aos-delay="60">
+        <div class="prog-card-img"><img src="https://picsum.photos/seed/energy01/600/400" alt="전기 절약"></div>
+        <div class="prog-card-body">
+          <div class="prog-card-top">
+            <span class="badge badge-sage">에너지 절감</span>
+            <span class="badge badge-gold">초급</span>
+          </div>
+          <div class="prog-card-title">대기전력 차단 챌린지</div>
+          <p class="prog-card-desc">사용하지 않는 전자제품의 플러그를 뽑거나 멀티탭 스위치를 끄는 습관을 만들어보세요.</p>
+          <div class="prog-card-meta">
+            <span><i class="fa-regular fa-clock"></i> 30일</span>
+            <span><i class="fa-solid fa-users"></i> 6,110명 참여</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="food" data-aos="fade-up" data-aos-delay="120">
+        <div class="prog-card-img"><img src="https://picsum.photos/seed/food01/600/400" alt="채식 챌린지"></div>
+        <div class="prog-card-body">
+          <div class="prog-card-top">
+            <span class="badge badge-green">식습관</span>
+            <span class="badge" style="background:rgba(200,100,50,.1);color:#c86432">중급</span>
+          </div>
+          <div class="prog-card-title">주 3회 채식 식단 챌린지</div>
+          <p class="prog-card-desc">일주일에 3번 식물성 식단으로 식사하는 미션입니다. 레시피 가이드를 함께 제공합니다.</p>
+          <div class="prog-card-meta">
+            <span><i class="fa-regular fa-clock"></i> 30일</span>
+            <span><i class="fa-solid fa-users"></i> 5,340명 참여</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="transport" data-aos="fade-up" data-aos-delay="0">
+        <div class="prog-card-img"><img src="https://picsum.photos/seed/transit01/600/400" alt="대중교통 챌린지"></div>
+        <div class="prog-card-body">
+          <div class="prog-card-top">
+            <span class="badge badge-sage">교통</span>
+            <span class="badge badge-gold">초급</span>
+          </div>
+          <div class="prog-card-title">자가용 대신 대중교통</div>
+          <p class="prog-card-desc">자동차 대신 지하철·버스·자전거를 이용한 날에 인증하는 미션입니다.</p>
+          <div class="prog-card-meta">
+            <span><i class="fa-regular fa-clock"></i> 30일</span>
+            <span><i class="fa-solid fa-users"></i> 7,820명 참여</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="waste" data-aos="fade-up" data-aos-delay="60">
+        <div class="prog-card-img"><img src="https://picsum.photos/seed/recycle01/600/400" alt="분리수거 챌린지"></div>
+        <div class="prog-card-body">
+          <div class="prog-card-top">
+            <span class="badge badge-green">제로웨이스트</span>
+            <span class="badge badge-gold">초급</span>
+          </div>
+          <div class="prog-card-title">올바른 분리수거 마스터</div>
+          <p class="prog-card-desc">플라스틱, 종이, 유리, 금속 각각의 올바른 분리 방법을 배우고 실천합니다.</p>
+          <div class="prog-card-meta">
+            <span><i class="fa-regular fa-clock"></i> 30일</span>
+            <span><i class="fa-solid fa-users"></i> 9,200명 참여</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="energy" data-aos="fade-up" data-aos-delay="120">
+        <div class="prog-card-img"><img src="https://picsum.photos/seed/shower01/600/400" alt="물 절약 챌린지"></div>
+        <div class="prog-card-body">
+          <div class="prog-card-top">
+            <span class="badge badge-sage">에너지 절감</span>
+            <span class="badge" style="background:rgba(200,100,50,.1);color:#c86432">중급</span>
+          </div>
+          <div class="prog-card-title">샤워 5분 줄이기 챌린지</div>
+          <p class="prog-card-desc">샤워 시간을 5분 단축하면 하루 약 50L의 물을 절약할 수 있습니다.</p>
+          <div class="prog-card-meta">
+            <span><i class="fa-regular fa-clock"></i> 30일</span>
+            <span><i class="fa-solid fa-users"></i> 4,680명 참여</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHT SWIPER -->
+<section class="highlight-section">
+  <div class="container">
+    <div class="hl-header" data-aos="fade-up">
+      <div>
+        <p class="eyebrow">Special</p>
+        <h2 class="section-title">이달의 추천 미션</h2>
+      </div>
+      <div class="hl-nav">
+        <button class="hl-btn" id="hlPrev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="hl-btn" id="hlNext"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="swiper hlSwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="hl-card">
+            <div class="hl-card-img"><img src="https://picsum.photos/seed/spring01/700/400" alt="봄 미션"></div>
+            <div class="hl-card-body">
+              <div class="hl-card-badge-row">
+                <span class="badge badge-green">5월 추천</span>
+                <span class="badge badge-gold">인기 급상승</span>
+              </div>
+              <div class="hl-card-title">나무 1그루 입양하기</div>
+              <p class="hl-card-desc">지역 숲 가꾸기 캠페인과 연계해 실제 나무를 입양하고 30일 동안 성장 일지를 작성합니다.</p>
+              <div class="hl-card-footer">
+                <div class="hl-card-date"><i class="fa-regular fa-calendar"></i> 2025년 5월 1일 ~ 5월 31일</div>
+                <a href="contact.html" class="hl-card-link">신청하기 <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="hl-card">
+            <div class="hl-card-img"><img src="https://picsum.photos/seed/market01/700/400" alt="제철 식재료"></div>
+            <div class="hl-card-body">
+              <div class="hl-card-badge-row">
+                <span class="badge badge-green">식습관</span>
+                <span class="badge badge-sage">신규</span>
+              </div>
+              <div class="hl-card-title">제철 식재료만 구매하기</div>
+              <p class="hl-card-desc">수입·냉동 식품 대신 국산 제철 식재료를 구매해 운송 탄소를 줄이는 미션입니다.</p>
+              <div class="hl-card-footer">
+                <div class="hl-card-date"><i class="fa-regular fa-calendar"></i> 2025년 5월 1일 ~ 5월 31일</div>
+                <a href="contact.html" class="hl-card-link">신청하기 <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="hl-card">
+            <div class="hl-card-img"><img src="https://picsum.photos/seed/bicycle02/700/400" alt="자전거 출퇴근"></div>
+            <div class="hl-card-body">
+              <div class="hl-card-badge-row">
+                <span class="badge badge-sage">교통</span>
+                <span class="badge badge-gold">도전!</span>
+              </div>
+              <div class="hl-card-title">자전거 출퇴근 30일</div>
+              <p class="hl-card-desc">자동차나 대중교통 대신 자전거로 출퇴근하거나 이동하는 30일 챌린지입니다.</p>
+              <div class="hl-card-footer">
+                <div class="hl-card-date"><i class="fa-regular fa-calendar"></i> 상시 진행</div>
+                <a href="contact.html" class="hl-card-link">신청하기 <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="hl-card">
+            <div class="hl-card-img"><img src="https://picsum.photos/seed/tumbler01/700/400" alt="텀블러 챌린지"></div>
+            <div class="hl-card-body">
+              <div class="hl-card-badge-row">
+                <span class="badge badge-green">제로웨이스트</span>
+                <span class="badge badge-gold">인기</span>
+              </div>
+              <div class="hl-card-title">텀블러 365 챌린지</div>
+              <p class="hl-card-desc">카페 방문 시 항상 텀블러를 지참하는 미션입니다. 일회용컵 연간 약 365개를 줄일 수 있습니다.</p>
+              <div class="hl-card-footer">
+                <div class="hl-card-date"><i class="fa-regular fa-calendar"></i> 상시 진행</div>
+                <a href="contact.html" class="hl-card-link">신청하기 <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule-section">
+  <div class="container">
+    <div class="schedule-header" data-aos="fade-up">
+      <p class="eyebrow">Schedule</p>
+      <h2 class="section-title">2025 오프라인 일정</h2>
+      <p class="section-desc">전국 각지에서 열리는 오프라인 이벤트와 모임에 참여하세요.</p>
+    </div>
+
+    <div class="schedule-list">
+      <div class="sched-item" data-aos="fade-up">
+        <div class="sched-date">
+          <span class="month">May</span>
+          <span class="day">17</span>
+          <span class="weekday">토요일</span>
+        </div>
+        <div class="sched-body">
+          <div class="sched-title">서울 한강공원 플로깅 이벤트</div>
+          <p class="sched-desc">여의도 한강공원에서 달리며 쓰레기를 줍는 플로깅 행사입니다. 선착순 100명.</p>
+          <div class="sched-tags">
+            <span class="badge badge-green">서울</span>
+            <span class="badge badge-sage">야외활동</span>
+          </div>
+        </div>
+        <div class="sched-action"><a href="contact.html">신청하기 <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="sched-item" data-aos="fade-up">
+        <div class="sched-date">
+          <span class="month">May</span>
+          <span class="day">24</span>
+          <span class="weekday">토요일</span>
+        </div>
+        <div class="sched-body">
+          <div class="sched-title">부산 해운대 비치코밍 행사</div>
+          <p class="sched-desc">해운대 해변에서 해양 쓰레기를 수거하고 업사이클링 워크숍에 참여합니다.</p>
+          <div class="sched-tags">
+            <span class="badge badge-green">부산</span>
+            <span class="badge badge-sage">워크숍</span>
+          </div>
+        </div>
+        <div class="sched-action"><a href="contact.html">신청하기 <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="sched-item" data-aos="fade-up">
+        <div class="sched-date">
+          <span class="month">Jun</span>
+          <span class="day">05</span>
+          <span class="weekday">목요일</span>
+        </div>
+        <div class="sched-body">
+          <div class="sched-title">세계 환경의 날 기념 강연</div>
+          <p class="sched-desc">환경부 장관 및 기후 전문가들이 참여하는 세계 환경의 날 기념 특별 강연입니다.</p>
+          <div class="sched-tags">
+            <span class="badge badge-green">서울</span>
+            <span class="badge badge-gold">특별행사</span>
+          </div>
+        </div>
+        <div class="sched-action"><a href="contact.html">신청하기 <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="sched-item" data-aos="fade-up">
+        <div class="sched-date">
+          <span class="month">Jun</span>
+          <span class="day">21</span>
+          <span class="weekday">토요일</span>
+        </div>
+        <div class="sched-body">
+          <div class="sched-title">대구 달성습지 생태 탐방</div>
+          <p class="sched-desc">달성습지 일대 생태계를 탐방하고 도시 녹지의 중요성을 배우는 프로그램입니다.</p>
+          <div class="sched-tags">
+            <span class="badge badge-green">대구</span>
+            <span class="badge badge-sage">생태체험</span>
+          </div>
+        </div>
+        <div class="sched-action"><a href="contact.html">신청하기 <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="sched-item" data-aos="fade-up">
+        <div class="sched-date">
+          <span class="month">Jul</span>
+          <span class="day">12</span>
+          <span class="weekday">토요일</span>
+        </div>
+        <div class="sched-body">
+          <div class="sched-title">전국 동시 30일 챌린지 스타트</div>
+          <p class="sched-desc">여름 시즌 전국 동시 챌린지 개시일입니다. 온오프라인 동시 킥오프 이벤트가 진행됩니다.</p>
+          <div class="sched-tags">
+            <span class="badge badge-gold">전국</span>
+            <span class="badge badge-green">챌린지 시작</span>
+          </div>
+        </div>
+        <div class="sched-action"><a href="contact.html">신청하기 <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO JOIN (Steps) -->
+<section class="steps-section">
+  <div class="container">
+    <div class="steps-header" data-aos="fade-up">
+      <p class="eyebrow">How To Join</p>
+      <h2 class="section-title">참여 방법</h2>
+      <p class="section-desc">단 4단계로 지구를 위한 30일을 시작할 수 있습니다.</p>
+    </div>
+    <div class="steps-flow">
+      <div class="step-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-num">01</div>
+        <div class="step-title">신청서 작성</div>
+        <p class="step-desc">아래 신청 폼에 기본 정보를 입력하고 관심 미션 카테고리를 선택하세요.</p>
+      </div>
+      <div class="step-item" data-aos="fade-up" data-aos-delay="80">
+        <div class="step-num">02</div>
+        <div class="step-title">웰컴 키트 수령</div>
+        <p class="step-desc">신청 완료 후 가이드북과 미션 카드가 담긴 웰컴 키트를 발송해드립니다.</p>
+      </div>
+      <div class="step-item" data-aos="fade-up" data-aos-delay="160">
+        <div class="step-num">03</div>
+        <div class="step-title">30일 미션 수행</div>
+        <p class="step-desc">매일 미션을 수행하고 사진 또는 텍스트로 인증하세요. 커뮤니티에 공유하면 더욱 좋습니다.</p>
+      </div>
+      <div class="step-item" data-aos="fade-up" data-aos-delay="240">
+        <div class="step-num">04</div>
+        <div class="step-title">에코 인증 배지 발급</div>
+        <p class="step-desc">30일 완주 시 공식 에코 인증 배지와 수료증을 발급해드립니다.</p>
+      </div>
+    </div>
+    <div class="steps-cta" data-aos="fade-up">
+      <a href="contact.html" class="btn btn-gold"><i class="fa-solid fa-seedling"></i> 지금 신청하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">EARTH<span>ON</span></a>
+        <p>지구를 위한 30일 챌린지.<br>작은 실천이 지구의 내일을 바꿉니다.<br>지금 당신의 변화를 시작하세요.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>캠페인</h4>
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="program.html">프로그램</a></li>
+          <li><a href="#">참여 후기</a></li>
+          <li><a href="#">보도자료</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>정보</h4>
+        <ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>연락처</h4>
+        <ul>
+          <li><a href="mailto:hello@earthon.kr">hello@earthon.kr</a></li>
+          <li><a href="tel:0212345678">02-1234-5678</a></li>
+          <li>서울특별시 성동구<br>왕십리로 83, 4층</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 EARTHON Campaign. All rights reserved.</span>
+      <span>지구를 위한 작은 실천 <i class="fa-solid fa-leaf" style="color:var(--c-sage); margin-left:4px"></i></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/program.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/gmarketsans/GmarketSans.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <title>참여신청 — EARTHON</title>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+  <a href="index.html" class="nav-logo">EARTH<span>ON</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html"   class="nav-link">홈</a></li>
+    <li><a href="about.html"   class="nav-link">소개</a></li>
+    <li><a href="program.html" class="nav-link">프로그램</a></li>
+    <li><a href="contact.html" class="nav-link active nav-cta">참여신청</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="메뉴">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <p class="page-hero-tag"><i class="fa-solid fa-paper-plane"></i> Join Us</p>
+    <h1>30일의 여정,<br>지금 시작하세요</h1>
+    <p class="page-hero-desc">참여 신청부터 문의까지. 궁금한 점은 아래 FAQ를 확인하거나 직접 연락해주세요.</p>
+  </div>
+</section>
+
+<!-- CONTACT + FORM -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info" data-aos="fade-right">
+        <p class="eyebrow">Contact</p>
+        <h2>언제든지<br>연락주세요</h2>
+        <p>평일 오전 9시부터 오후 6시까지 운영합니다. 빠른 문의는 이메일이 가장 효율적입니다.</p>
+
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="info-label">Email</div>
+              <div class="info-value"><a href="mailto:hello@earthon.kr">hello@earthon.kr</a></div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="info-label">Phone</div>
+              <div class="info-value"><a href="tel:0212345678">02-1234-5678</a></div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="info-label">Address</div>
+              <div class="info-value">서울특별시 성동구 왕십리로 83<br>헤이그라운드 서울숲점 4층</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <div class="info-label">Hours</div>
+              <div class="info-value">평일 09:00 — 18:00<br>주말 및 공휴일 휴무</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-divider"></div>
+        <div class="info-social-title">Follow Us</div>
+        <div class="info-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-form-wrap" data-aos="fade-left">
+        <h3>챌린지 참여 신청</h3>
+        <p>아래 정보를 입력하시면 웰컴 키트와 함께 안내 메일을 보내드립니다.</p>
+
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">이름 <span class="req">*</span></label>
+              <input type="text" class="form-input" placeholder="홍길동">
+            </div>
+            <div class="form-group">
+              <label class="form-label">연락처 <span class="req">*</span></label>
+              <input type="tel" class="form-input" placeholder="010-0000-0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">이메일 <span class="req">*</span></label>
+            <input type="email" class="form-input" placeholder="example@email.com">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">거주 지역</label>
+              <select class="form-select">
+                <option value="" disabled selected>지역 선택</option>
+                <option>서울특별시</option>
+                <option>경기도</option>
+                <option>부산광역시</option>
+                <option>인천광역시</option>
+                <option>대구광역시</option>
+                <option>광주광역시</option>
+                <option>대전광역시</option>
+                <option>울산광역시</option>
+                <option>기타</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">참여 유형</label>
+              <select class="form-select">
+                <option value="" disabled selected>유형 선택</option>
+                <option>개인 참여</option>
+                <option>가족 참여</option>
+                <option>기업/단체 참여</option>
+                <option>학교/교육기관</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">관심 미션 카테고리 (복수 선택 가능)</label>
+            <div class="form-check-group">
+              <label class="form-check"><input type="checkbox" value="waste"><span><i class="fa-solid fa-recycle" style="color:var(--c-sage);margin-right:4px"></i> 제로웨이스트</span></label>
+              <label class="form-check"><input type="checkbox" value="energy"><span><i class="fa-solid fa-bolt" style="color:var(--c-accent);margin-right:4px"></i> 에너지 절감</span></label>
+              <label class="form-check"><input type="checkbox" value="food"><span><i class="fa-solid fa-leaf" style="color:var(--c-sage);margin-right:4px"></i> 식습관 개선</span></label>
+              <label class="form-check"><input type="checkbox" value="transport"><span><i class="fa-solid fa-bicycle" style="color:var(--c-sage);margin-right:4px"></i> 친환경 교통</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">참여 동기 또는 문의사항</label>
+            <textarea class="form-textarea" placeholder="캠페인에 참여하게 된 계기나 궁금한 점을 자유롭게 적어주세요."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-agree">
+              <input type="checkbox" id="agreeCheck">
+              <span><a href="#">개인정보 처리방침</a>에 동의합니다. 수집된 정보는 캠페인 운영 목적으로만 사용되며, 목적 달성 후 즉시 파기됩니다.</span>
+            </label>
+          </div>
+
+          <button class="form-submit" id="submitBtn">
+            <i class="fa-solid fa-seedling"></i> 참여 신청하기
+          </button>
+        </div>
+
+        <!-- Success state -->
+        <div class="form-success" id="formSuccess">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <h3>신청이 완료되었습니다!</h3>
+          <p style="margin-top:8px">입력하신 이메일로 안내 메일을 발송했습니다.<br>웰컴 키트는 2-3일 내로 배송됩니다.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="faq-sidebar" data-aos="fade-right">
+        <p class="eyebrow">FAQ</p>
+        <h2>자주 묻는<br>질문들</h2>
+        <p>찾으시는 답변이 없다면 이메일이나 전화로 직접 문의해주세요.</p>
+        <a href="mailto:hello@earthon.kr" class="btn btn-green">
+          <i class="fa-solid fa-envelope"></i> 문의하기
+        </a>
+      </div>
+
+      <div class="faq-list" data-aos="fade-left">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            참여 비용이 있나요?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">EARTHON 챌린지 참여는 완전 무료입니다. 웰컴 키트 배송 역시 무료로 제공됩니다. 다만 기업·단체 맞춤 프로그램의 경우 별도 협의가 필요할 수 있습니다.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            챌린지 중간에 포기해도 되나요?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">언제든 자유롭게 중단하실 수 있습니다. 다만 에코 인증 배지와 수료증은 30일 완주 후에만 발급됩니다. 완주 실패 후 다음 회차에 다시 도전하는 것도 가능합니다.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            미션 인증은 어떻게 하나요?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">EARTHON 공식 인스타그램 또는 오픈카카오톡 채널에 사진과 함께 #어스온챌린지 해시태그를 달아 게시하시면 됩니다. 게시물은 공개로 설정해야 인증이 확인됩니다.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            웰컴 키트는 언제 받을 수 있나요?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">신청 완료 후 영업일 기준 2~3일 내에 발송되며, 발송 후 1~2일 내에 수령하실 수 있습니다. 제주도 및 도서 지역은 추가 시일이 소요될 수 있습니다.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            가족이나 직장 동료와 함께 신청할 수 있나요?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">물론입니다. 가족·팀 참여를 적극 권장합니다. 각자 개별 신청 후 커뮤니티에서 그룹을 만들 수 있습니다. 5인 이상 단체 신청의 경우 전용 팀 채널을 별도로 개설해드립니다.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            에코 인증 배지는 어떻게 받나요?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">30일 완주 인증 후 신청 이메일로 디지털 배지 파일(PNG, SVG)과 수료증 PDF가 발송됩니다. SNS 프로필이나 이메일 서명 등에 자유롭게 활용하실 수 있습니다.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL LINKS -->
+<section class="social-section">
+  <div class="container">
+    <div data-aos="fade-up">
+      <p class="eyebrow">Community</p>
+      <h2 class="section-title">소셜 채널에서도 만나요</h2>
+    </div>
+    <div class="social-grid">
+      <div class="social-card sc-instagram" data-aos="fade-up" data-aos-delay="0">
+        <div class="s-icon"><i class="fab fa-instagram"></i></div>
+        <h4>Instagram</h4>
+        <p>미션 인증 사진과 환경 팁을 공유합니다</p>
+        <div class="s-handle">@earthon_kr</div>
+      </div>
+      <div class="social-card sc-youtube" data-aos="fade-up" data-aos-delay="60">
+        <div class="s-icon"><i class="fab fa-youtube"></i></div>
+        <h4>YouTube</h4>
+        <p>챌린지 가이드 영상과 환경 다큐를 제공합니다</p>
+        <div class="s-handle">EARTHON 공식</div>
+      </div>
+      <div class="social-card sc-facebook" data-aos="fade-up" data-aos-delay="120">
+        <div class="s-icon"><i class="fab fa-facebook-f"></i></div>
+        <h4>Facebook</h4>
+        <p>커뮤니티 그룹에서 참여자들과 소통하세요</p>
+        <div class="s-handle">EARTHON Community</div>
+      </div>
+      <div class="social-card sc-twitter" data-aos="fade-up" data-aos-delay="180">
+        <div class="s-icon"><i class="fab fa-x-twitter"></i></div>
+        <h4>Twitter / X</h4>
+        <p>환경 뉴스와 캠페인 소식을 실시간으로 전합니다</p>
+        <div class="s-handle">@earthon_kr</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+  <div class="map-inner">
+    <div class="map-iframe-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.4596985946217!2d127.0376!3d37.5447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5b4e37e0e9b%3A0x79fd3ddde32ab7aa!2z7ISc7Jq47Yq567OE7IucIOyFseq1rCDsl63s1bQg7JWE7LGF66Gc66GcIOyytOq4uCDsmqkg4KW5!5e0!3m2!1sko!2skr!4v1699000000000!5m2!1sko!2skr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="EARTHON 오피스 위치">
+      </iframe>
+    </div>
+    <div class="map-info">
+      <p class="eyebrow">Location</p>
+      <h3>오시는 길</h3>
+      <div class="map-detail-list">
+        <div class="map-detail-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <div class="dl">주소</div>
+            <div class="dv">서울특별시 성동구 왕십리로 83<br>헤이그라운드 서울숲점 4층</div>
+          </div>
+        </div>
+        <div class="map-detail-item">
+          <i class="fa-solid fa-train-subway"></i>
+          <div>
+            <div class="dl">지하철</div>
+            <div class="dv">2호선 뚝섬역 1번 출구<br>도보 5분</div>
+          </div>
+        </div>
+        <div class="map-detail-item">
+          <i class="fa-solid fa-bus"></i>
+          <div>
+            <div class="dl">버스</div>
+            <div class="dv">성수이로 정류장 하차<br>도보 3분</div>
+          </div>
+        </div>
+        <div class="map-detail-item">
+          <i class="fa-solid fa-square-parking"></i>
+          <div>
+            <div class="dl">주차</div>
+            <div class="dv">건물 내 주차 가능 (2시간 무료)<br>친환경 교통 이용 권장</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">EARTH<span>ON</span></a>
+        <p>지구를 위한 30일 챌린지.<br>작은 실천이 지구의 내일을 바꿉니다.<br>지금 당신의 변화를 시작하세요.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>캠페인</h4>
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="program.html">프로그램</a></li>
+          <li><a href="#">참여 후기</a></li>
+          <li><a href="#">보도자료</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>정보</h4>
+        <ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>연락처</h4>
+        <ul>
+          <li><a href="mailto:hello@earthon.kr">hello@earthon.kr</a></li>
+          <li><a href="tel:0212345678">02-1234-5678</a></li>
+          <li>서울특별시 성동구<br>왕십리로 83, 4층</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 EARTHON Campaign. All rights reserved.</span>
+      <span>지구를 위한 작은 실천 <i class="fa-solid fa-leaf" style="color:var(--c-sage); margin-left:4px"></i></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
